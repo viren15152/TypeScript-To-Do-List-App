@@ -6,59 +6,96 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background: url('./images/jessica-lewis-thepaintedsquare-fJXv46LT7Xk-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire screen */
   }
   
   #app {
-    background: white;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for blending */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    border-radius: 16px; /* Softer, modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow to lift the container */
+    width: 350px; /* Slightly wider for better spacing */
+    backdrop-filter: blur(5px); /* Adds a blurred effect for a classy look */
   }
   
   h1 {
     text-align: center;
+    font-family: 'Lucinda Sans', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 20px;
   }
   
   #task-input {
     width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
   }
   
   button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 10px;
-    background: #007bff;
+    background: black;
     color: white;
+    font-size: 1em;
+    font-weight: bold;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
   }
   
   button:hover {
-    background: #0056b3;
+    background: black;
+    transform: scale(1.05); /* Slight grow effect on hover */
   }
+
+  button:active {
+    background: rgb(73, 229, 73); /* Changes background to green when clicked */
+    color: white; /* Optional: Changes text color to white */
+    transition: background 0.10s ease-in-out; /* Smooth transition for color changes */
+  }
+  
   
   ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
   }
   
   li {
     display: flex;
     justify-content: space-between;
-    padding: 8px;
+    align-items: center;
+    padding: 10px;
     background: #f9f9f9;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.95em;
+  }
+
+  li button {
+    font-size: 0.8em; /* Smaller buttons for more text space */
+    padding: 4px 8px; /* Adjust padding to reduce button size */
+    margin-left: 8px; /* Add space between text and buttons */
     border-radius: 4px;
   }
   
   li.completed {
     text-decoration: line-through;
     color: gray;
+    background: #e8e8e8;
+  }
+  
+  li:hover {
+    background: #e0f7fa;
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
   }
   
   
