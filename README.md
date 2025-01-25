@@ -81,7 +81,7 @@ to discuss what you would like to change.
 
 ## Link to Deployed Application 
 
-https://viren15152.github.io/fcc-js-rpg/
+https://viren15152.github.io/TypeScript-To-Do-List-App/
 
 ## License
 
