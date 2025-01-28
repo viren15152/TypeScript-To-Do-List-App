@@ -1,4 +1,4 @@
-# TypeScript 
+# TypeScript-To-Do-List-Application 
 
 ![Application functioning](<images/Screenshot 2025-01-25 at 18.51.55.png>)
 
